@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Допомога біженцям | Контакти</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container topbar">
+      <a href="index.html" class="logo">
+        <span class="dot"></span> Допомога біженцям
+      </a>
+
+      <button class="menu-toggle" aria-label="Відкрити меню">☰</button>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="about.html">Про проєкт</a></li>
+          <li><a href="help.html">Як допомогти</a></li>
+          <li><a href="contacts.html" class="active">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding:60px 20px 50px;">
+      <div class="container">
+        <h1>Контакти</h1>
+        <p style="opacity:0.95;">Зв’яжіться з нами, якщо ви хочете допомогти або потребуєте підтримки.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-item">
+            <span class="icon">✉️</span>
+            <h4>Електронна пошта</h4>
+            <p><a href="mailto:sviatpotriny@gmail.com">sviatpotriny@gmail.com</a></p>
+          </div>
+          <div class="contact-item">
+            <span class="icon">📱</span>
+            <h4>Телефон</h4>
+            <p><a href="tel:+380960588536">096 058 85 36</a></p>
+          </div>
+          <div class="contact-item">
+            <span class="icon">📍</span>
+            <h4>Місцезнаходження</h4>
+            <p>Україна</p>
+          </div>
+        </div>
+
+        <div style="max-width:620px; margin:44px auto 0;">
+          <h2 style="color:var(--primary); margin-bottom:16px; font-size:1.7rem;">Напишіть нам</h2>
+          <form style="display:flex; flex-direction:column; gap:16px;" onsubmit="event.preventDefault(); alert('Дякуємо! Повідомлення надіслано (демо-режим).');">
+            <label style="font-weight:600; font-size:0.98rem;">Ім’я <span style="color:var(--primary);">*</span></label>
+            <input type="text" placeholder="Ваше ім’я" required style="padding:14px; border:1px solid var(--border); border-radius:10px; font:inherit;">
+
+            <label style="font-weight:600; font-size:0.98rem;">Електронна пошта <span style="color:var(--primary);">*</span></label>
+            <input type="email" placeholder="example@mail.com" required style="padding:14px; border:1px solid var(--border); border-radius:10px; font:inherit;">
+
+            <label style="font-weight:600; font-size:0.98rem;">Повідомлення <span style="color:var(--primary);">*</span></label>
+            <textarea rows="5" placeholder="Напишіть, чим ви можете допомогти або чого потребують..." required style="padding:14px; border:1px solid var(--border); border-radius:10px; font:inherit; resize:vertical;"></textarea>
+
+            <button type="submit" class="btn btn-primary">Надіслати повідомлення</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="logo" style="font-size:1.3rem;">Допомога біженцям</div>
+      <div class="socials">
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Telegram">✈️</a>
+      </div>
+      <small>© 2026 «Допомога біженцям». Вебсайт створено у рамках індивідуального завдання №2 «Створення вебсайту».</small>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+    toggle.addEventListener('click', () => nav.classList.toggle('show'));
+  </script>
+</body>
+</html>
