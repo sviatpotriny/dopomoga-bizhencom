@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Привіше-Група | Учасники</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container topbar">
+      <a href="index.html" class="logo">
+        <span class="dot"></span> Привіше-Група
+      </a>
+
+      <button class="menu-toggle" aria-label="Відкрити меню">☰</button>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="music.html">Творчість</a></li>
+          <li><a href="members.html" class="active">Учасники</a></li>
+          <li><a href="contact.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding:50px 20px 40px;">
+      <div class="container">
+        <h1>Учасники гурту</h1>
+        <p style="opacity:0.95;">Люди, які стоять за музикою «Привіше-Група».</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-img">🎤</div>
+            <h3>Вокаліст</h3>
+            <p><strong>Роль у гурті:</strong> головний голос, тексти</p>
+            <p><strong>Інструменти:</strong> голос, клавіші</p>
+            <p style="color:var(--text-m); font-size:0.9rem;">Ця особа відповідає за вокальну частину композицій та пише більшість текстів пісень.</p>
+          </div>
+          <div class="card">
+            <div class="card-img">🎸</div>
+            <h3>Гітарист</h3>
+            <p><strong>Роль у гурті:</strong>导 гітара, ритм-гітара</p>
+            <p><strong>Інструменти:</strong> електрогітара, акустична гітара</p>
+            <p style="color:var(--text-m); font-size:0.9rem;">Створює мелодії, 솔о та ритмічну основу кожної пісні.</p>
+          </div>
+          <div class="card">
+            <div class="card-img">🥁</div>
+            <h3>Барабанщик</h3>
+            <p><strong>Роль у гурті:</strong> ударні інструменти</p>
+            <p><strong>Інструменти:</strong> барабанна установка</p>
+            <p style="color:var(--text-m); font-size:0.9rem;">Задає темп і енергію кожного виступу.</p>
+          </div>
+          <div class="card">
+            <div class="card-img">🎹</div>
+            <h3>Кладовішник</h3>
+            <p><strong>Роль у гурті:</strong> клавіші, синтезатори</p>
+            <p><strong>Інструменти:</strong> клавішні, MIDI-контролери</p>
+            <p style="color:var(--text-m); font-size:0.9rem;">Додає гармонії, атмосферні тембри та ефекти.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="logo" style="font-size:1.3rem;">Привіше-Група</div>
+      <small>© 2026 «Привіше-Група». Вебсайт створено у рамках індивідуального завдання №2.</small>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+    toggle.addEventListener('click', () => nav.classList.toggle('show'));
+  </script>
+</body>
+</html>
