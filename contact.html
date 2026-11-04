@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Привіше-Група | Контакти</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container topbar">
+      <a href="index.html" class="logo">
+        <span class="dot"></span> Привіше-Група
+      </a>
+
+      <button class="menu-toggle" aria-label="Відкрити меню">☰</button>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="music.html">Творчість</a></li>
+          <li><a href="members.html">Учасники</a></li>
+          <li><a href="contact.html" class="active">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding:50px 20px 40px;">
+      <div class="container">
+        <h1>Контакти</h1>
+        <p style="opacity:0.95;">Зв'яжіться з нами для бронювання виступів та співпраці.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-item">
+            <span class="icon">✉️</span>
+            <h4>Електронна пошта</h4>
+            <p>music@pryvishe-group.com.ua</p>
+          </div>
+          <div class="contact-item">
+            <span class="icon">📱</span>
+            <h4>Телефон менеджера</h4>
+            <p>+38 0XX XXX XX XX</p>
+          </div>
+          <div class="contact-item">
+            <span class="icon">📍</span>
+            <h4>Місто</h4>
+            <p>Україна</p>
+          </div>
+        </div>
+
+        <div style="max-width:600px; margin:40px auto 0;">
+          <h2 style="color:var(--primary); margin-bottom:16px; font-size:1.6rem;">Напишіть нам</h2>
+          <form style="display:flex; flex-direction:column; gap:14px;">
+            <label style="font-weight:600; font-size:0.95rem;">Ім'я <span style="color:var(--primary);">*</span></label>
+            <input type="text" placeholder="Ваше ім'я" required style="padding:12px; border:1px solid var(--border); border-radius:8px; font:inherit;">
+
+            <label style="font-weight:600; font-size:0.95rem;">Електронна пошта <span style="color:var(--primary);">*</span></label>
+            <input type="email" placeholder="example@mail.com" required style="padding:12px; border:1px solid var(--border); border-radius:8px; font:inherit;">
+
+            <label style="font-weight:600; font-size:0.95rem;">Повідомлення <span style="color:var(--primary);">*</span></label>
+            <textarea rows="5" placeholder="Напишіть, чим ми можемо допомогти..." required style="padding:12px; border:1px solid var(--border); border-radius:8px; font:inherit; resize:vertical;"></textarea>
+
+            <button type="submit" class="btn btn-primary">Надіслати</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="logo" style="font-size:1.3rem;">Привіше-Група</div>
+      <div class="socials">
+        <a href="#" aria-label="YouTube">▶</a>
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Facebook">📘</a>
+      </div>
+      <small>© 2026 «Привіше-Група». Вебсайт створено у рамках індивідуального завдання №2 «Створення вебсайту».</small>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+    toggle.addEventListener('click', () => nav.classList.toggle('show'));
+  </script>
+</body>
+</html>
